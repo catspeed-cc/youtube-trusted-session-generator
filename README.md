@@ -47,7 +47,7 @@ In "headless: false", Chromium does not support sanboxing when it is not ran by 
 ## Tutorials for "always running" program: Get po_token on demand using HTTP.
 
 ### Tutorial with Docker
-Run the program: `docker run -p 8080:8080 quay.io/invidious/youtube-trusted-session-generator:webserver`
+Run the program: `docker run -p 8880:8880 quay.io/invidious/youtube-trusted-session-generator:webserver`
 
 ### Tutorial without Docker
 1. Install Chromium or Google Chrome.
@@ -58,6 +58,6 @@ Run the program: `docker run -p 8080:8080 quay.io/invidious/youtube-trusted-sess
 
 ### Usage of the HTTP API
 
-Send your requests to http://localhost:8080/token in order to obtain your po_token.
+Send your requests to http://localhost:8880/token in order to obtain your po_token.
 
-You can also force refresh the po_token in the cache by sending a request to http://localhost:8080/update.
+You can also force refresh the po_token in the cache by sending a request to http://localhost:8880/update.
